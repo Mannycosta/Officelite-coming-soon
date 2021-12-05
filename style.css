@@ -55,6 +55,9 @@ button:hover {
   border: none;
   border-radius: 28px;
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+} 
+.outline button:hover {
+  background-color: #829cff;
 }
 .preview img {
   width: 520px;
@@ -125,6 +128,15 @@ button:hover {
 .plan-3 button {
   background-color: rgba(130,156,255,.2);
 }
+.plan-1 button:hover {
+  background-color: rgba(130,156,255,.4);
+}
+.plan-2 button:hover {
+  background-color: rgba(255,255,255,1);
+}
+.plan-3 button:hover {
+  background-color: rgba(130,156,255,.4);
+}
 
 footer {
   background-image: url(assets/home/bg-pattern-footer.svg);
@@ -188,6 +200,10 @@ h3 span {
   background-color: #5175FF;
   border: none;
   border-radius: 28px;
+}
+
+.get-started button:hover {
+  background-color: #829cff;
 }
 
 @media only screen and (max-width: 600px) {
