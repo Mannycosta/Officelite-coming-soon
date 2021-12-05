@@ -11,6 +11,12 @@ body {
   background-repeat: no-repeat;
   background-position: top -430px right -310px;
 }
+.wrapper {
+  width: 100vw;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
 h1 {
   font-size: 56px;
   margin-bottom: 30px;
@@ -37,6 +43,9 @@ h1 {
 .outline p {
   margin-bottom: 30px;
 }
+button:hover {
+  cursor: pointer;
+}
 .outline button {
   font-size: 16px;
   font-weight: bold;
@@ -54,8 +63,10 @@ h1 {
   display: flex;
   justify-content: space-between;
   width: 1150px;
-  position: absolute;
-  top: 910px;
+  height: 508px;
+  position:absolute;  
+  top: 834px;
+  margin:auto;
 }
 
 .plans {
@@ -132,7 +143,7 @@ footer {
   margin: auto;
 }
 .today {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .today h3 {
   letter-spacing: 5px;
@@ -177,4 +188,115 @@ h3 span {
   background-color: #5175FF;
   border: none;
   border-radius: 28px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 100vw;
+    height: 1684px;
+    padding-bottom: 0px;
+  }
+  .header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .header img {
+    width: 155px;
+  }
+  .content {
+    width: 100vw;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .preview img {
+    width: 171px;
+  }
+  .outline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 46px;
+  }
+  .outline p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .outline button{
+    text-align: center;
+  }
+  .plan-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 1588px;
+    position:absolute;  
+    top: 890px;
+    margin:auto;
+  }
+  .plans {
+    height: 508px;
+    width: 328px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  footer {
+    background-position: top -300px right -830px;
+    height: 1248px;
+    width: 100vw;
+  }
+  .coming-soon {
+    flex-direction: column;
+    padding-top: 894px;
+    width: 328px;
+  }
+
+  .coming-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .today {
+    margin-bottom: 35px;
+
+  }
+
+  .today h3 {
+    font-size: 16px;
+}
+
+  .countdown {
+    margin: 0px;
+    border-radius: 10px;
+    width: 72px;
+    height: 92px;
+    margin-bottom: 35px;
+  }
+  #clockdiv {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .countdown div:first-of-type {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  .countdown div:last-of-type{
+    font-size: 12px;
+  }
+  .get-started {
+    display: flex;
+    justify-content: center;
+  }
 }

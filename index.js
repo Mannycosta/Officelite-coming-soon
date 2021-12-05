@@ -46,11 +46,10 @@ future.setDate(future.getDate() + 30);
 
 var todaysDiv = document.querySelector('.today');
 todaysDiv.innerHTML = `
+<div class="coming-div">
 <h3>
-  Coming Soon : <span>${future.toLocaleDateString('default', { day:'numeric',year: 'numeric', month: 'short' })}</span>
+  COMING <span>${future.toLocaleDateString('default', { day:'numeric'})} ${future.toLocaleDateString('default', {month: 'short'}).toUpperCase()} ${future.toLocaleDateString('default', {year: 'numeric'})}</span>
 </h3>
+</div>
 `
 
-
-
-console.log(future);
