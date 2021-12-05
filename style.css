@@ -191,8 +191,13 @@ h3 span {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    background-position: top -150px center;
+  background-size: 450px 450px;
+  }
   .card {
     width: 100%;
+    margin-top: 60px;
   }
   .container{
     width: 100%;
@@ -254,7 +259,8 @@ h3 span {
     text-align: center;
   }
   footer {
-    background-position: top -300px right -830px;
+    background-position: bottom -65px center;
+    background-size: 1100px 1100px;
     height: 1248px;
     width: 100%;
   }
