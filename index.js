@@ -37,12 +37,9 @@ function initializeClock(id, endtime) {
   updateClock();
   const timeinterval = setInterval(updateClock, 1000);
 }
-
-const deadline = new Date(Date.parse(new Date()) + 30 * 24 * 60 * 60 * 1000);
-initializeClock('clockdiv', deadline);
-
 var future = new Date();
 future.setDate(future.getDate() + 30);
+future.setHours(0,0,0,0)
 
 var todaysDiv = document.querySelector('.today');
 todaysDiv.innerHTML = `
@@ -52,4 +49,7 @@ todaysDiv.innerHTML = `
 </h3>
 </div>
 `
+console.log(future)
+initializeClock('clockdiv', future);
+
 
