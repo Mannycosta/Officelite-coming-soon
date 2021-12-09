@@ -4,7 +4,6 @@
   margin: 0;
   font-family: 'Kumbh Sans', sans-serif;
   color: #25293a;
-  z-index: 1;
 }
 html {
   height: 1024px;
@@ -26,7 +25,7 @@ body{
   height: 1024px;
   width: 100%;
   background-color: #25293a;
-  z-index: 0;
+  z-index: -1;
   background-image: url(assets/sign-up/bg-pattern-side.svg);
   background-position: left -730px bottom -200px;
   background-size: 2000px 2000px;
@@ -198,7 +197,7 @@ option:focus {
   color: #fff;
   border: 1px solid #BEC5CC;
   border-radius: 10px;
-  z-index: 2;
+  z-index: 1;
   width: 360px;
   position: absolute;
   top: 50px;
