@@ -1,36 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="sign-up-style.css">
+  <title>Frontend Mentor | Officelite coming soon site</title>
+  <script defer src="sign-up.js"></script>
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
+  <title>Frontend Mentor | Officelite coming soon site</title>
 </head>
+
 <body>
-  Work smarter. Save time.
+  <div class="wrapper">
+      <div class="card">
+        <div class="header">
+          <a href="index.html"><img src="assets/shared/logo.svg" alt=""></a>
+        </div>
+        <div class="content">
+          <div class="outline">
+            <div class="title">
+              <h1>Work smarter. Save time.</h1>
+            </div>
+            <div class="info">
+              <p>Easily manage your projects. Get on the list and receive in-app perks available only to
+                early subscribers. We are moving into final development and getting ready for official launch soon.</p>
+            </div>
+            <div class="today">
+              <h3>COMING <span>2 JAN 2022</span></h3>
+            </div>
+            <div id="clockdiv">
+              <div class="countdown">
+                <div class="days"></div>
+                <div class="smalltext">Days</div>
+              </div>
+              <div class="countdown">
+                <div class="hours"></div>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div class="countdown">
+                <div class="minutes"></div>
+                <div class="smalltext">Min</div>
+              </div>
+              <div class="countdown">
+                <div class="seconds"></div>
+                <div class="smalltext">Sec</div>
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <form id="form1" class="sign-up-form">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email Address">
+              <label class="custom-select">
+                <select id="subscription-type" name="price" placeholder="Email Address">
+                  <option value="basic">Basic Pack Free</option>
+                  <option value="pro">Pro Pack $9.99</option>
+                  <option value="ultimate">Ultimate Pack $19.99</option>
+                </select>
+              </label>
+              <input type="text" placeholder="Phone Number">
+              <input type="text" placeholder="Company">
+              <button type="submit" form="form1" value="Submit">Get on the list</button>
+            </form>
+          </div>
+          <div class="side-container">
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
-
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
+          </div>
+        </div>
+      </div>
+  </div>
 </body>
+
 </html>

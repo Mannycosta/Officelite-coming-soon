@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: #25293a;
+  z-index: 1;
+}
+html {
+  height: 1024px;
+
+}
+body{
+  overflow-x: hidden;
+}
+
+.card {
+  width: 1150px;
+  margin: 70px auto;
+}
+
+.side-container {
+  position: absolute;
+  top: -184px;
+  left: 880px;
+  height: 1024px;
+  width: 100%;
+  background-color: #25293a;
+  z-index: 0;
+  background-image: url(assets/sign-up/bg-pattern-side.svg);
+  background-position: left -730px bottom -200px;
+  background-size: 2000px 2000px;
+  background-repeat: no-repeat;
+}
+
+.header {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  width: 1150px;
+  justify-content: space-between;
+  height: 508px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.outline {
+  margin-top: 60px;
+  width: 540px;
+  height: 508px;
+}
+
+.outline h1 {
+  font-size: 56px;
+  line-height: 64px;
+  margin-bottom: 24px;
+}
+
+.outline p {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+#clockdiv {
+  display: flex;
+}
+
+.today h3 {
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+}
+
+h3 span {
+  color: #5175FF;
+}
+
+.countdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(130, 156, 255, .2);
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 128px;
+}
+
+.countdown div:first-of-type {
+  font-size: 50px;
+  font-weight: bold;
+  color: #5175ff;
+  text-align: center;
+}
+
+.countdown div:last-of-type {
+  margin-top: 0px;
+  color: #979797;
+  text-align: center;
+}
+
+.sign-up-form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  height: 508px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: -12px 0px 50px -5px rgba(0, 0, 0, 0.1);
+  background-image: url(assets/sign-up/bg-pattern-side.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 40px 43px;
+  box-sizing: border-box;
+}
+
+input,
+select {
+  border: none;
+  border-bottom: 1px solid #BEC5CC;
+  margin-bottom: 24px;
+  padding: 0px 16px;
+  width: 360px;
+  height: 45px;
+  font-size: 16px;
+  color: #25293a;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: #BEC5CC;
+}
+
+input:last-of-type {
+  margin-bottom: 40px;
+}
+
+input:focus {
+  outline: none;
+}
+
+select {
+  font-weight: 700;
+  color: #25293a;
+  opacity: 1;
+}
+
+select:focus {
+  outline: none;
+}
+
+option {
+  font-weight: 700;
+}
+
+option:focus {
+  background-color: red;
+}
+
+.sign-up-form button {
+  width: 360px;
+  height: 56px;
+  border-radius: 28px;
+  background-color: #5175FF;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+  color: #888;
+}
+
+.custom-select select {
+  display: block;
+  width: 360px;
+  min-height: 35px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+
+
+
+.custom-select .selector-options {
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  background: #ffffff;
+  color: #fff;
+  border: 1px solid #BEC5CC;
+  border-radius: 10px;
+  z-index: 2;
+  width: 360px;
+  position: absolute;
+  top: 50px;
+}
+
+
+.custom-select .selector-options li {
+  font-weight: 700;
+  color: #25293a;
+  height: 35px;
+  border-bottom: 1px solid #BEC5CC;
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+.custom-select .selector-options li:last-of-type {
+  border: none;
+}
+
+.custom-select .selector-options li:hover {
+  background-image: url(assets/sign-up/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
