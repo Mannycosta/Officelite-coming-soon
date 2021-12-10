@@ -87,6 +87,10 @@ h3 span {
   height: 128px;
 }
 
+.countdown:last-of-type {
+  margin-right: 0px;
+}
+
 .countdown div:first-of-type {
   font-size: 50px;
   font-weight: bold;
@@ -95,6 +99,7 @@ h3 span {
 }
 
 .countdown div:last-of-type {
+  font-weight: bold;
   margin-top: 0px;
   color: #979797;
   text-align: center;
@@ -224,4 +229,115 @@ option:focus {
   background-image: url(assets/sign-up/icon-check.svg);
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  html {
+    height: 1236px;
+  }
+  body {
+    background-color: #fafafa;
+    background-image: url(assets/home/bg-pattern-header.svg);
+    background-position: top -150px center;
+    background-size: 450px 450px;
+    background-repeat: no-repeat;
+  }
+  .wrapper {
+    height: 1236px;
+  }
+  .card {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 916px;
+  }
+
+  .side-container {
+    display: none;
+  }
+  footer {
+    background-color: #25293a;
+    background-image: url(assets/sign-up/bg-pattern-side.svg);
+    background-position: top -350px center;
+    background-size: 1100px 1100px;
+    height: 320px;
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .header img {
+    margin-top: 46px;
+    width: 155px;
+  }
+
+  .content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 80 auto;
+  }
+  .outline {
+    width: 326px;
+    margin: 0;
+  }
+  .outline h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .outline p {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .sign-up-form {
+    margin-top: 64px;
+    height: 465px;
+    width: 327px;
+    padding: 24px;
+    box-shadow: none;
+  }
+  input, select{
+    width: 279px;
+  }
+  .sign-up-form button {
+    width: 279px;
+  }
+
+  .custom-select select {
+    width: 279px;
+  }
+  .custom-select .selector-options {
+    width: 279px;
+  }
+  .today h3 {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+  }
+  .countdown {
+    margin-right: 13px;
+    width: 72px;
+    height: 92px;
+  }
+  
+  .countdown div:first-of-type {
+    font-size: 32px;
+    font-weight: bold;
+    color: #5175ff;
+    text-align: center;
+  }
+  
+  .countdown div:last-of-type {
+    font-size: 12px;
+    margin-top: 0px;
+    color: #979797;
+    text-align: center;
+  }
 }
