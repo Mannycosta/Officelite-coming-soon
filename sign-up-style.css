@@ -12,7 +12,6 @@ html {
 body{
   overflow-x: hidden;
 }
-
 .card {
   width: 1150px;
   margin: 70px auto;
@@ -339,5 +338,80 @@ option:focus {
     margin-top: 0px;
     color: #979797;
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  html {
+    width: 100%;
+    height: 1318px;
+  }
+  body {
+    background-color: #fafafa;
+  }
+  .wrapper {
+    height: 1318px;
+  }
+  .card {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 936px;
+  }
+  .header {
+    width: 100%;
+    margin:auto;
+    margin-left: 39px;
+    margin-top: 72px;
+  }
+
+  .content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 104px auto 0px;
+  }
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .outline {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .outline p {
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+  }
+  .side-container {
+    display: none;
+  }
+  .coming-div {
+    width: 448px;
+  }
+  h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  #clockdiv {
+    margin: 0;
+    width: 448px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 104px;
+  }
+  .sign-up-form {
+    box-shadow: none;
+  }
+  footer {
+    height: 380px;
+    width: 100%;
+    background-color: #25293a;
+    background-image: url(assets/sign-up/bg-pattern-side.svg);
+    background-position: top -350px center;
+    background-size: 1100px 1100px;
   }
 }
